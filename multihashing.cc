@@ -25,6 +25,7 @@ extern "C" {
     #include "fresh.h"
     #include "Lyra2RE.h"
     #include "Lyra2.h"
+    #include "Lyra2Z.h"
     #include "Lyra2REV2.h"
 }
 

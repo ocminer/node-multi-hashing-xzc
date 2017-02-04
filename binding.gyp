@@ -27,6 +27,7 @@
 	        "zr5.c",
                 "fresh.c",
 	        "Lyra2.c",
+		"Lyra2Z.c",
 	        "Sponge.c",
                 "Lyra2RE.c",
                 "Lyra2REV2.c",

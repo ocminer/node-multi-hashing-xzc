@@ -34,7 +34,7 @@
 #include <stdio.h>
 #include "Lyra2.h"
 
-void lyra2z_hash(const char* input, char* output, uint32_t height)
+void lyra2_hash(const char* input, char* output, uint32_t height)
 {
 
     uint32_t hashB[8];

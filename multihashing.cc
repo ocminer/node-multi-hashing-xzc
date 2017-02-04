@@ -568,6 +568,26 @@ NAN_METHOD(lyra2rev2) {
         NanNewBufferHandle(output, 32)
     );
 }
+NAN_METHOD(lyra2Z) {
+    NanScope();
+
+    if (args.Length() < 1)
+        return THROW_ERROR_EXCEPTION("You must provide one argument.");
+
+    Local<Object> target = args[0]->ToObject();
+
+    if(!Buffer::HasInstance(target))
+        return THROW_ERROR_EXCEPTION("Argument should be a buffer object.");
+
+    char * input = Buffer::Data(target);
+    char output[32];
+
+    lyra2Z_hash(input, output, 20000);
+
+    NanReturnValue(
+        NanNewBufferHandle(output, 32)
+    );
+}
 
 void init(Handle<Object> exports) {
     exports->Set(NanNew<String>("quark"), NanNew<FunctionTemplate>(quark)->GetFunction());

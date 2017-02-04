@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/upgradeadvice/node-multi-hashing.git"
+    "url": "https://github.com/xiaolin1579/node-multi-hashing-xzc.git"
   },
   "dependencies": {
     "bindings": "*",
@@ -30,6 +30,7 @@
     "sha1",
     "whirlpoolx",
     "lyra2re",
+    "lyra2Z",
     "zr5"
   ]
 }

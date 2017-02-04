@@ -32,7 +32,7 @@
 #include <stdint.h>
 #include <string.h>
 #include <stdio.h>
-#include "sph_blake.h"
+#include "sha3/sph_blake.h"
 #include "Lyra2.h"
 
 void lyra2z_hash(const char* input, char* output)
